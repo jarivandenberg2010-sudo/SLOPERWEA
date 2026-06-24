@@ -1,22 +1,51 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: black;
+}
+
+/* HOME */
+
+.home-page {
+    height: 100vh;
     background-image: url("background.png");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: black;
-    color: white;
-    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-bottom: 60px;
+    box-sizing: border-box;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.65);
-    z-index: -1;
+.shop-button {
+    background: #c7ff00;
+    color: black;
+    padding: 18px 45px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.slogan {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* SHOP */
+
+.shop-body {
+    background: #050505;
+    color: white;
+    text-align: center;
 }
 
 .shop-title {
@@ -34,7 +63,7 @@ body::before {
 }
 
 .shop-card {
-    background: rgba(17,17,17,0.9);
+    background: #111;
     border: 2px solid #c7ff00;
     border-radius: 18px;
     padding: 20px;
@@ -59,10 +88,4 @@ button {
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
-}
-
-@media (max-width: 700px) {
-    .shop-grid {
-        grid-template-columns: 1fr;
-    }
 }
