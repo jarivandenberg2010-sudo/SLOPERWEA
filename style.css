@@ -23,7 +23,20 @@ body {
 }
 
 .shop-button {
+    display: inline-block;
+    background: #d4ff00;
+    color: black;
+    padding: 22px 55px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
     margin-top: 40px;
+    box-shadow: 0 0 20px #d4ff00,
+                0 0 50px #d4ff00,
+                0 0 80px #d4ff00;
+    transition: 0.3s;
 }
 
 .shop-button:hover {
