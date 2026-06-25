@@ -6,45 +6,165 @@
   <title>SLOPERWEAR Shop</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="shop-body">
 
-  <header class="shop-header">
+  <header class="navbar">
     <h1>SLOPERWEAR</h1>
-    <a href="index.html">HOME</a>
-    <a href="cart.html">🛒 Winkelmandje</a>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="cart.html">🛒 CART</a>
+    </nav>
   </header>
 
-  <section class="shop-title">
+  <section class="shop-hero">
     <h2>SHOP</h2>
     <p>Alle shirts €20,00</p>
   </section>
 
-  <div class="shop-grid">
-    <div class="shop-card"><img src="shirt-01.jpeg"><h2>Shirt 1</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-02.jpeg"><h2>Shirt 2</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-03.jpeg"><h2>Shirt 3</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-04.jpeg"><h2>Shirt 4</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-05.jpeg"><h2>Shirt 5</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
+  <main class="products">
 
-    <div class="shop-card"><img src="shirt-06.jpeg"><h2>Shirt 6</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-07.jpeg"><h2>Shirt 7</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-08.jpeg"><h2>Shirt 8</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-09.jpeg"><h2>Shirt 9</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-10.jpeg"><h2>Shirt 10</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
+    <div class="product-card">
+      <img src="shirt-01.jpeg" alt="Shirt 1">
+      <h3>Shirt 1</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 1', 20, 'shirt-01.jpeg')">ADD TO CART</button>
+    </div>
 
-    <div class="shop-card"><img src="shirt-11.jpeg"><h2>Shirt 11</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-12.jpeg"><h2>Shirt 12</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-13.jpeg"><h2>Shirt 13</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-14.jpeg"><h2>Shirt 14</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-15.jpeg"><h2>Shirt 15</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
+    <div class="product-card">
+      <img src="shirt-02.jpeg" alt="Shirt 2">
+      <h3>Shirt 2</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 2', 20, 'shirt-02.jpeg')">ADD TO CART</button>
+    </div>
 
-    <div class="shop-card"><img src="shirt-16.jpeg"><h2>Shirt 16</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-17.jpeg"><h2>Shirt 17</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-18.jpeg"><h2>Shirt 18</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-19.jpeg"><h2>Shirt 19</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-    <div class="shop-card"><img src="shirt-20.jpeg"><h2>Shirt 20</h2><p>€20,00</p><button class="cart-button">ADD TO CART</button></div>
-  </div>
+    <div class="product-card">
+      <img src="shirt-03.jpeg" alt="Shirt 3">
+      <h3>Shirt 3</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 3', 20, 'shirt-03.jpeg')">ADD TO CART</button>
+    </div>
 
+    <div class="product-card">
+      <img src="shirt-04.jpeg" alt="Shirt 4">
+      <h3>Shirt 4</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 4', 20, 'shirt-04.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-05.jpeg" alt="Shirt 5">
+      <h3>Shirt 5</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 5', 20, 'shirt-05.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-06.jpeg" alt="Shirt 6">
+      <h3>Shirt 6</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 6', 20, 'shirt-06.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-07.jpeg" alt="Shirt 7">
+      <h3>Shirt 7</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 7', 20, 'shirt-07.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-08.jpeg" alt="Shirt 8">
+      <h3>Shirt 8</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 8', 20, 'shirt-08.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-09.jpeg" alt="Shirt 9">
+      <h3>Shirt 9</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 9', 20, 'shirt-09.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-10.jpeg" alt="Shirt 10">
+      <h3>Shirt 10</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 10', 20, 'shirt-10.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-11.jpeg" alt="Shirt 11">
+      <h3>Shirt 11</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 11', 20, 'shirt-11.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-12.jpeg" alt="Shirt 12">
+      <h3>Shirt 12</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 12', 20, 'shirt-12.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-13.jpeg" alt="Shirt 13">
+      <h3>Shirt 13</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 13', 20, 'shirt-13.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-14.jpeg" alt="Shirt 14">
+      <h3>Shirt 14</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 14', 20, 'shirt-14.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-15.jpeg" alt="Shirt 15">
+      <h3>Shirt 15</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 15', 20, 'shirt-15.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-16.jpeg" alt="Shirt 16">
+      <h3>Shirt 16</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 16', 20, 'shirt-16.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-17.jpeg" alt="Shirt 17">
+      <h3>Shirt 17</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 17', 20, 'shirt-17.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-18.jpeg" alt="Shirt 18">
+      <h3>Shirt 18</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 18', 20, 'shirt-18.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-19.jpeg" alt="Shirt 19">
+      <h3>Shirt 19</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 19', 20, 'shirt-19.jpeg')">ADD TO CART</button>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt-20.jpeg" alt="Shirt 20">
+      <h3>Shirt 20</h3>
+      <p>€20,00</p>
+      <button onclick="addToCart('Shirt 20', 20, 'shirt-20.jpeg')">ADD TO CART</button>
+    </div>
+
+  </main>
+
+  <script src="cart.js"></script>
 </body>
 </html>
